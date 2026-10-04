@@ -1,0 +1,33 @@
+.delivery-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.delivery-option {
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.delivery-option.available {
+    border-color: #b7dfc5;
+    background: #f4fbf6;
+}
+
+.delivery-option.unavailable {
+    border-color: #e5b8b8;
+    background: #fff6f6;
+}
+
+.delivery-option span {
+    font-size: 20px;
+}
+
+.delivery-option small {
+    color: #666;
+}

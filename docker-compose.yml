@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: pinflag-postgres
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: pinflag123
+      POSTGRES_DB: pinflag
+
+    ports:
+      - "5434:5432"
+
+    volumes:
+      - pinflag_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  pinflag_postgres_data:
