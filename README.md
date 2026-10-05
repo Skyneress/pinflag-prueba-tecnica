@@ -57,7 +57,7 @@ pinflagPruebaTecnica/
 
 ---
 
-## 4. Arquitectura
+## 4. Arquitectura hexagonal
 
 El backend utiliza una estructura modular separando dominio, aplicación e infraestructura.
 
